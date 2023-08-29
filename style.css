@@ -1,0 +1,266 @@
+  @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Playfair:ital,wght@0,900;1,300;1,400;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body{
+    background-color: #352356;
+  }
+
+  .cabecalho{
+    padding: 2% 0% 0% 15%;
+  }
+
+  .cabecalho-link{
+    display: flex;
+    gap: 80px;
+    justify-content:center;       
+  }
+
+  .cabecalho-menu-link{
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;   
+  }
+
+  .cabecalho-link a{
+    color: white;
+    font-size: 1rem;  
+  }
+
+  .cabecalho-link a:hover{
+    color: #2658C7;
+    transition: 0.3s all;
+  }
+
+  button{
+    color: #2658C7;
+    background: transparent;
+    border: solid 1px #2658C7;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 1rem;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: #2658C7;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .apresentacao-home{
+    padding: 3% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+  }
+
+  .apresentacao-sobre{
+    padding: 3% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+  }
+
+  .apresentacao-habilidades{
+    padding: 3% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+  }
+
+  .apresentacao-contato{
+    padding: 0% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;   
+  }
+
+  .container-text{
+    padding: 100px 0 0 130px;      
+  }
+
+  .container-text-contato{
+    padding: 50px 0 0 130px;      
+  }
+
+  .titulo-principal{
+    color: #ffaa00;
+    font-weight: bold;
+  }
+
+  .titulo-sobre{
+    color: #ffaa00;
+    font-weight: bold;
+  }
+
+  .titulo-habilidades{
+    color: #ffaa00;
+    font-weight: bold;
+  }
+
+  .titulo-contato{
+    color: #ffaa00;
+    font-weight: bold;
+  }
+
+  #nome-autor::after {
+    content: "|";
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+  .text p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  p{
+    color: #2658C7;
+  }
+
+  .redes-sociais a{
+    color: #2658C7;
+    padding: 10px;
+    margin-top: 5px; 
+    width: 50%; 
+    font-size: 40px; /* aumenta o tamanho do ícone*/
+    margin-right: 10px; /* espaçamento entre os  ícones*/
+     
+  }
+
+  .btn{
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  .imagem{
+    width: 20%;
+    border-radius: 50%;   
+}
+
+.form{
+  width: 512px;
+  display: flex;
+  flex-direction: column;  
+}
+
+.form label{
+  font-size: 18px;
+  color: #2658C7;
+  margin-bottom: 5px;
+}
+
+.form input{
+  height: 20px;
+}
+
+.form input, form textarea{
+  background-color: transparent;
+  border: 2px solid #2658C7;
+  border-radius: 12px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.form input:focus, form textarea:focus{
+  outline: 2px solid #2658C7;
+}
+
+.footer {
+  background-color:  #878DFB;
+  /* padding: -50px; */
+  /* text-align: center; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-txtimg{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+}
+
+
+@media(max-width: 1200px){
+  .cabecalho{
+      padding: 10%;            
+  }
+
+  .cabecalho-link{
+      justify-content: center;
+      gap: 30px;
+  }
+
+  .apresentacao-home{
+      flex-direction: column-reverse;
+      padding: 5%;
+  }
+
+  .apresentacao-sobre{
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao-habilidades{
+    flex-direction: column-reverse;
+      padding: 5%;
+  }
+
+  .apresentacao-contato{
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 15%;
+  }
+
+  .apresentacao-conteudo{
+    justify-content: center;  
+    align-items:start;
+    width: auto;
+  }
+
+  .container-text{
+    justify-content: center;
+    padding: 20%;
+  }
+
+  .imagem{
+    width: 50%;
+  }
+
+  .form{
+    width: 350px;
+  }
+
+  .imagem-footer{
+    width: 20%;
+  }
+
+}
+  
+

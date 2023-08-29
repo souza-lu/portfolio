@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    
+    <header class="cabecalho">
+        <nav class="cabecalho-link">
+            <a class="cabecalho-menu-link" href="index.html">Home</a>
+            <a class="cabecalho-menu-link" href="about.html">Sobre mim</a>
+            <a class="cabecalho-menu-link" href="habilidades.html">Habilidades</a>
+            <a class="cabecalho-menu-link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao-contato">
+        <div class="container-text-contato">
+            <div class="text">
+                <h1 class="titulo-contato">Entre em contato</h1>                
+            </div>
+
+            <form class="form" action="https://formsubmit.co/lusouza2111@gmail.com" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" name="name" id="nome" placeholder="Preencha seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@email.com.br" required>
+
+                <label for="textarea">Sua mensagem</label>
+                <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5502/Portfolio2/Portfolio/email_enviado.html">
+
+                <button type="submit">Enviar</button>
+           </form>
+                                      
+        </div>
+        <img class="imagem" src="fundo.jpg" alt="Foto de Lucimara Souza">
+    </main>
+
+    <footer class="footer">
+        <div class="footer-txtimg">
+            <img class="imagem-footer" src="logo_senac.png" alt="Logo do senac são paulo">
+            <p>Desenvolvido por Lucimara Souza no programa Alura Include</p>
+            <img class="imagem-footer" src="Logo_Alura_Include.svg" alt="Logo do programa Alura Include">
+        </div>
+    </footer>
+
+</body>
+
+</html>
